@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class IT26101660Lab4Q2{
+public class IT23267640Lab4Q2{
 	public static void main(String[] args){
 		double examMarks, labsMarks, examPercentage, LabPercentage, totalExamMarks;
 		Scanner input= new Scanner(System.in);
