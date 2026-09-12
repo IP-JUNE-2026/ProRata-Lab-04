@@ -1,0 +1,46 @@
+import java.util.Scanner; 
+
+ public class IT22195616Lab04Q2 {
+
+      public static void main(String[] args) {
+		  
+		  Scanner in = new Scanner(System.in);
+		
+		System.out.print("Enter Exam Marks: ");
+		double examMarks = in.nextDouble();
+		
+		System.out.print("Enter Lab Submission Marks: ");
+		double labMarks = in.nextDouble();
+		
+		if (examMarks < 0 || examMarks > 100 && labMarks < 0 || labMarks > 100){
+			System.out.println("Invalid Marks!");
+		}
+        
+		else {
+			System.out.print("Enter Exam Percentage: ");
+			double examPer = in.nextDouble();
+		
+			
+			System.out.print("Enter Lab Percentage: ");
+			double labPer = in.nextDouble();
+		
+			
+			if (examPer + labPer == 100) {
+			double finalMarks = (examMarks * examPer / 100) + (labMarks * labPer / 100);	
+			System.out.println("Final Marks = " + finalMarks);  
+			
+			}
+			else {
+				
+			System.out.println("Invalid Percentage" );
+			
+			}
+		
+        		
+		}
+		
+	}
+		
+
+}		
+ 

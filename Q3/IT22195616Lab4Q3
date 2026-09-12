@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class IT22195616Lab4Q3 {
+
+    public static void main(String[] args) {
+
+        int number;
+
+        Scanner input = new Scanner(System.in);
+
+        // Input a number
+        System.out.print("Enter a number: ");
+        number = input.nextInt();
+
+        // Using ternary operator
+        String result = (number > 0) ? "Positive" : (number < 0) ? "Negative" : "Zero";
+
+        // Output result
+        System.out.println("The number is " + result);
+
+        input.close();
+    }
+	
+}
